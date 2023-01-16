@@ -1,0 +1,26 @@
+// Themes
+$text_color: #2a2a2a;
+$heading_color: #1f1f2c;
+$white_color: #ffffff;
+$dark_color: #141414;
+// $bg_default: #c92f2f;
+// $border_color: #ebebeb;
+// $hover_color: #c92f2f;
+// $footer_color: #2d2d2d;
+// $secondary_color: #959595;
+
+// Media Queries
+
+$xs_screen: "only screen and (min-width:320px) and (max-width:575px)";
+
+$sm_screen: "only screen and (min-width:576px) and (max-width:767px)";
+
+$md_screen: "only screen and (min-width:768px) and (max-width:991px)";
+
+$lg_screen: "only screen and (min-width:992px) and (max-width:1199px)";
+
+$xl_screen: "only screen and (min-width:1200px)";
+
+$sm_md_screen: "only screen and (max-width:768px)";
+
+$md_lg_screen: "only screen and (min-width:769px)";

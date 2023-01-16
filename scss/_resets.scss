@@ -1,0 +1,131 @@
+//  Fonts
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins_bd;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+// General css
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  background: $white_color;
+  background-color: #fff;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//  Text
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text_color;
+  line-height: 1.3;
+}
+
+p {
+  font-size: 15px;
+  line-height: 30px;
+  color: $text_color;
+}
+
+a {
+  @include transition_duration(500ms);
+  @include transition(0.5s ease-in-out);
+  text-decoration: none;
+  outline: 0 solid transparent;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+// Buttons and forms
+button,
+.btn:focus,
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+// Sections
+.Sp {
+  padding: 100px 0;
+}
+
+.section_title {
+  font-family: "Poppins_bd", sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.section_description {
+  // margin: 0 auto 50px;
+  text-align: center;
+}
+
+.content_title {
+  font-family: "Poppins_bd", sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.content_description {
+  line-height: 1.5;
+}
+
+.col_m {
+  margin: 0 auto 20px;
+}
+
+// animations
+.animate-delay-100 {
+  animation-delay: 1s;
+}
+.animate-delay-200 {
+  animation-delay: 1.5s;
+}
+.animate-delay-300 {
+  animation-delay: 2s;
+}
+
+// Scrollbar
+// ::-webkit-scrollbar {width: ;}
+// ::-webkit-scrollbar-thumb {background-color: ; border-radius: ;}
+
+// text selection
+// ::selection {
+//   background: ;
+//   color: ;
+// }
